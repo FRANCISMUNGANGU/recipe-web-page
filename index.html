@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta name="author" content="Francis Mung'ang'u"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="style" href="js/style.js"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Recipe page</title>
+</head>
+<body>
+     <ul>
+        <li><a class="active" href="index.html">Spaghetti Bolognese</a></li>
+
+        <li style="float:right;"><a href="korvs.html">Korvstroganoff</a></li>
+      </ul>
+      <div id="heading">
+        <h4><b>Spaghetti Bolognese</b></h4> 
+      </div>
+      <hr>
+      <div class="grid-container"> 
+      <div class="card">
+        <img src="pictures/spaghetti bolonese.jpeg" alt="Avatar">
+        <div class="container">
+        <h4><b>Spaghetti Bolognese</b></h4> 
+        <p>Spaghetti Bolognese is an Italian delicacy. It is made from spaghetti and Bolognese sauce.
+        </p> 
+        <h4><strong>Ingredients</strong></h4> 
+       
+        <ol>
+            <li>1 tbsp olive oil.......</li>
+            <li>Rashers smoked streaky bacon, finely chopped..........</li>
+            <li>2 medium onions, finely chopped.......</li>
+            <li>2 carrots, trimmed and finely chopped.......</li>
+            <li>2 celery sticks,finely chopped...................</li>
+            <li>2 garlic cloves finely chopped.........</li>
+            <li>2-3 sprigs rosemary leaves picked and finely chopped.......</li>
+            <li>500g beef mince.......</li>
+        </ol>    
+     </div>   
+    </div>
+
+    <div class="table ">
+    <div class="container mt-3">
+        <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th>Bolognese sauce Ingredients</th>
+          <th>Ingredients for seasoning and serving</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>1 tsp dried oregano</td>
+          <td>75g parmesan grated, plus extra to serve</td>
+        </tr>
+        <tr>
+          <td>2 fresh bay leaves</td>
+          <td>400g spaghetti</td>
+        </tr>
+        <tr></tr>
+          <td>2 tbsp tomato purée</td>
+          <td>crusty bread to serve (optional)</td>
+        </tr>
+        <tr></tr>
+          <td>1 beef stock cube</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>1 red chilli deseeded and finely chopped (optional)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>125ml red wine</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>6 cherry tomatoes sliced in half</td>
+          <td></td>
+        </tr>  
+        </tbody>  
+      </table>
+      </div>
+    </div>
+     
+
+      <div class="card">
+        <img src="pictures/spaghetti bolonese.jpeg" alt="Avatar">
+        <div class="container">
+            <h4><b>Preparation</b></h4> 
+            <button onclick="myFunction()" id="myBtn" class="btn btn-info">Read more</button>
+            <oL>
+                <li>Put a large saucepan on a medium and add 1 tbsp olive oil.</li>
+                <li>Add 4 finely chopped bacon rashers and fry for 10 mins until golden and crisp.</li>
+                <li>Reduce the heat and add the 2 onionsheat<span id="dots">...</span>, 2 carrots, 2 celery sticks,
+                   2 garlic cloves and the leaves from 2-3 sprigs rosemary, all finely chopped, then fry for 10 mins. 
+                   Stir the veg often until it softens.
+                </li><span id="more">
+                <li>Increase the heat to medium-high, add 500g beef mince and cook stirring for 3-4 mins until the meat is browned all over.</li>
+                <li>Add 2 tins plum tomatoes, the finely chopped leaves from ¾ small pack basil, 1 tsp dried oregano, 2 bay leaves, 2 tbsp tomato purée,
+                   1 beef stock cube, 1 deseeded and finely chopped red chilli (if using),
+                    125ml red wine and 6 halved cherry tomatoes. Stir with a wooden spoon, breaking up the plum tomatoes.
+                </li>
+                <li>Bring to the boil, reduce to a gentle simmer and cover with a lid. Cook for 1 hr 15 mins stirring occasionally,
+                   until you have a rich, thick sauce.
+                </li>
+                <li>Add the 75g grated parmesan, check the seasoning and stir.</li>
+                <li>When the bolognese is nearly finished, cook 400g spaghetti following the pack instructions.</li>
+                <li>Drain the spaghetti and either stir into the bolognese sauce, or serve the sauce on top.
+                   Serve with more grated parmesan, the remaining basil leaves and crusty bread, if you like.
+                </li>
+            </oL>
+          </span>
+        </div>
+    </div>
+</div>
+<script>
+    function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }
+</script>
+</body>
+</html>
