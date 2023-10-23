@@ -66,9 +66,12 @@ ul {
   }
   .grid-container {
     display: grid;
-    grid-template-columns: 600px 600px 600px;
+    /* grid-template-columns: 600px 600px 600px; */
     gap: 5px;
     padding: 10px;
+    grid-template-areas: 
+    'item1 item1 item1 item1 item1 item1 item1'
+    'item2 item2 item3 item3 item3 item4 item4';
   }
   .grid-container > div {
     background-color: transparent;
@@ -80,3 +83,33 @@ ul {
     width: 300px;
     margin-left: 60px;
   }
+  #item1{
+    grid-area: item1;
+  }
+
+  #item2{
+    grid-area: item2;
+    padding: 10px;
+    margin: 10px
+  }
+  #item3{
+    grid-area: item3;
+    padding: 10px;
+    margin: 10px
+  }
+  #item3{
+    grid-area: item4;
+    padding: 10px;
+    margin: 10px
+  }
+  @media only screen and (max-width: 600px) {
+    /*inside this i can add my css rules*/
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+    'item1 item1 item1 item1 item1 item1 item1'
+    'item2 item2 item2 item2 item2 item2 item2'
+    'item3 item3 item3 item3 item3 item3 item3'
+    'item4 item4 item4 item4 item4 item4 item4';
+    }
+    }
